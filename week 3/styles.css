@@ -1,3 +1,7 @@
+body {
+   text-align: center;
+}
+
 h1 {
    font-family: 'Karla', sans-serif;
  }
@@ -5,5 +9,7 @@ h1 {
  p {
    font-family: 'Karla', sans-serif;
  }
+
+
 
  
