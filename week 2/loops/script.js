@@ -184,10 +184,11 @@ while (confirmation != 'n') {
     confirmation = prompt("Do you want to continue giving numbers? (y/n)");
     sum = sum + input;
     counter++;
-} console.log(`Average is ${sum / counter}`.);
+} console.log(`Average is ${sum / counter}`);
 
 
 // Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers. In the end program prints out the smallest number that user gave.
+
 let smallestNum = Number.MAX_VALUE;
 let userInput = prompt("How many numbers?");
 
@@ -198,6 +199,21 @@ for (let i = 0; i < userInput; i++) {
     }
 }
 console.log(`Smallest number is ${smallestNum}.`);
+
+//ALTERNATIVE
+
+let min = 0;
+let input = (prompt("How many numbers?"));
+
+for (let n = 0; n < input; n++) {
+    let num = Number(prompt("Enter number"));
+
+    if (num >= 0 && min == 0) {
+        min = num;
+    } else if (num < min) {
+        min = num;
+    }
+}
 
 // Make a program that asks ten numbers and in the end prints out two biggest numbers.
 
