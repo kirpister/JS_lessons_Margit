@@ -15,18 +15,19 @@
     <h2>Temperature Converter</h2>
     
     <div>
-        <label for="celsius">Celcius:</label>
-        <input type="number" oninput="convert()" id="celsius"/>
+        <label for="inputCelcius">Celcius:</label>
+        <input type="number" placeholder="Celcius" oninput="convert(this.id, this.value)" onchange="convert(this.id, this.value)" id="inputCelsius"/>
     </div>
     <div>
-         <label for="fahren">Fahrenheit:</label>
-        <input type="number" oninput="convert()" id="fahren"/>
+         <label for="inputFahren">Fahrenheit:</label>
+        <input type="number" placeholder="Fahrenheit" oninput="convert(this.id, this.value)" onchange="convert(this.id, this.value)" id="fahren"/>
     </div> 
     <div>
-        <label for="kelvin">Kelvin:</label>
-        <input type="number" oninput="convert()" id="kelvin"/>
+        <label for="inputKelvin">Kelvin:</label>
+        <input type="number" placeholder="Kelvin" oninput="convert(this.id, this.value)" onchange="convert(this.id, this.value)" id="kelvin"/>
     </div>
     
     <script src="script.js"></script>
 </body>
 </html>
+
