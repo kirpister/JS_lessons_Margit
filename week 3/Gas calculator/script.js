@@ -1,6 +1,6 @@
-calculate = () => {
- let price = document.getElementById('price').value;
- let money = document.getElementById('money').value;
+const calculate = () => {
+ let price = +document.getElementById('price').value;
+ let money = +document.getElementById('money').value;
  let liters = (money / price);
 
  document.getElementById('liters').textContent =  "You got" + " " + liters.toFixed(2) + " " + "liters."
@@ -11,3 +11,10 @@ calculate = () => {
     document.getElementById('message').textContent = "Good, you can escape now!"
  }
 } 
+
+// const money = +document.querySelector('#money');
+
+
+// const liters = Math.floor(money / price);
+// const answer = document.querySelector('answer');
+// answer.textContent = amount;

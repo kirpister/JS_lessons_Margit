@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Calculators :(</title>
+    <title>Gasoline calc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"><link>
 </head>
-<body>
+    <body>
+
 <h1>Gasoline price calculator</h1>
 <p>Make a program that asks the price of the gasoline and amount of money from the user.<br>The program calculates how much gasoline the user gets with the money.<br> The result is displayed on screen. If there are more than 10 litres, message on the screen:<br> "Good, you can escape now!", if less it shows  the message: "Oops, guess you'll just have to stay.</p>
 
-<p>Price of gas: <input id="price" type="number"></p>
-<p>Money: <input id="money" type="number"></p>
+<div>
+    <label for="price">Price:</label>
+    <input type="number" id="price"/>
+</div>
+<div>
+     <label for="money">Money:</label>
+    <input type="number" id="money"/>
+</div> 
+
+
+<!-- <p>Price of gas: <input id="price" type="number"></p>
+<p>Money: <input id="money" type="number"></p> -->
 
 <p id="liters"></p>
 <p id="message"></p>
 
 <button onclick="calculate()">&#128184; Calculate!</button>
 
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
 
 
