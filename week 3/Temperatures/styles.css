@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+ }
+ 
+ h1 {
+    font-family: 'Karla', sans-serif;
+  }
+ 
+ p {
+    font-family: 'Karla', sans-serif;
+  } 
+ 
+  label {
+   display: inline-block;
+   width: 100px;
+   margin: 10px 0;
+  }
