@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pizza Order &#127829;</title>
 </head>
@@ -13,26 +16,26 @@
 <div>
     <p>Please choose size of pizza!</p>
     <form>
-        <input type ="radio" name="pizza" value="for2" checked>For 2, the price is 7,50€
-        <input type ="radio" name="pizza" value="for4" checked>For 4, the price is 10,50€
-        <input type ="radio" name="pizza" value="for6" checked>For 6, the price is 12,50€
-        <input type ="radio" name="pizza" value="for8" checked>For 8, the price is 15,50€
+        <input type ="radio" name="size" value="kids" checked>Kids 7,50€
+        <input type ="radio" name="size" value="small" >Small 10,50€
+        <input type ="radio" name="size" value="medium" >Medium 12,50€
+        <input type ="radio" name="size" value="large" >Large 15,50€
     </form>
 </div>
 
 <div>
     <p>And your toppings please!</p>
     <form>
-        <input type="checkbox" name="topping1" value="">Tuna
-        <input type="checkbox" name="topping2" value="">Bacon
-        <input type="checkbox" name="topping3" value="">Pepperoni
-        <input type="checkbox" name="topping4" value="">Pineapple
-        <input type="checkbox" name="topping5" value="">Peppers
-        <input type="checkbox" name="topping6" value="">Ham
-        <input type="checkbox" name="topping7" value="">Prawn
-        <input type="checkbox" name="topping8" value="">Mushrooms
-        <input type="checkbox" name="topping9" value="">Ground Beef
-        <input type="checkbox" name="topping10" value="">Cheese
+        <input type="checkbox" name="topping" value="tuna">Tuna
+        <input type="checkbox" name="topping" value="bacon">Bacon
+        <input type="checkbox" name="topping" value="pepperoni">Pepperoni
+        <input type="checkbox" name="topping" value="pineapple">Pineapple
+        <input type="checkbox" name="topping" value="peppers">Peppers
+        <input type="checkbox" name="topping" value="ham">Ham
+        <input type="checkbox" name="topping" value="prawn">Prawn
+        <input type="checkbox" name="topping" value="mushroom">Mushrooms
+        <input type="checkbox" name="topping" value="groundbeef">Ground Beef
+        <input type="checkbox" name="topping" value="cheere">Cheese
     </form>
 </div>
 
@@ -44,8 +47,11 @@
         <option value="eatIn">Eat in</option>
         <option value="takeAway">Take away</option>
     </select>
-    <button>Get &#127829;</button>
+    <button onclick="order()">Get &#127829;</button>
 </div>
 
+<p id="price">pling</p>
+
+<script src="script.js"></script>
 </body>
 </html>
