@@ -15,6 +15,7 @@ const order = () => {
     if (size === "large") {
         price = 15.50;
     } 
+<<<<<<< HEAD
 
 
     let customerName = document.getElementById('customer').value;
@@ -44,3 +45,9 @@ const order = () => {
     console.log(textToWrite, numOfToppings, price);
     document.getElementById('price').textContent = `Hello ${customerName}. Your pizza size ${size} and your toppings are ${textToWrite}. Your chosen delivery method is ${deliveryMethod.value}. Your total price is: ${price} euros`;
 } 
+=======
+    console.log(price);
+
+    const topping = document.querySelector('input[name="topping"]').value;
+}
+>>>>>>> 94e5e528774e0f9a614ef4c1b817e877a8016ecd
