@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Order &#127829;</title>
+</head>
+<body>
+    <h2>Please Make Your Order!</h2>
+
+<div>
+
+    What is your name?<br> <input type="text" name="name" id="customer">
+
+    <p>Please choose the size of pizza!</p>
+    <form>
+        <input type ="radio" name="size" value="kids" checked>Kids 7,50€
+        <input type ="radio" name="size" value="small" >Small 10,50€
+        <input type ="radio" name="size" value="medium" >Medium 12,50€
+        <input type ="radio" name="size" value="large" >Large 15,50€
+    </form>
+</div>
+
+<div>
+    <p>And your toppings please!</p>
+    <form>
+        <input type="checkbox" name="topping" id="topping" value="tuna">Tuna
+        <input type="checkbox" name="topping" id="topping" value="bacon">Bacon
+        <input type="checkbox" name="topping" id="topping" value="pepperoni">Pepperoni
+        <input type="checkbox" name="topping" id="topping" value="pineapple">Pineapple
+        <input type="checkbox" name="topping" id="topping" value="peppers">Peppers
+        <input type="checkbox" name="topping" id="topping" value="ham">Ham
+        <input type="checkbox" name="topping" id="topping" value="prawn">Prawn
+        <input type="checkbox" name="topping" id="topping" value="mushroom">Mushrooms
+        <input type="checkbox" name="topping" id="topping" value="groundbeef">Ground Beef
+        <input type="checkbox" name="topping" id="topping" value="cheese">Cheese
+    </form>
+
+    
+</div>
+
+<div>
+    <p>Delivery</p>
+    <label for="delivery">Choose delivery method.</label>
+    <select id="delivery" name="delivery">
+        <option name="delivery" value="delivery">Delivery +5€</option>
+        <option name="delivery" value="eat in">Eat in</option>
+        <option name="delivery" value="takeAway">Take away</option>
+    </select>
+
+    <button onclick="order()">Get &#127829;</button>
+
+</div>
+
+<p id="price">pling</p>
+
+<script src="script.js"></script>
+</body>
+</html>
