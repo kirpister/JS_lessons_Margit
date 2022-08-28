@@ -32,15 +32,15 @@ const order = () => {
     if (numOfToppings > 4) {
         price = price + 0.50 * (numOfToppings - 4);
     }
-    console.log(textToWrite, numOfToppings, price);
+    //console.log(textToWrite, numOfToppings, price);
 
 
     let deliveryMethod = document.querySelector('#delivery');
-    console.log(deliveryMethod.selectedIndex);
+    //console.log(deliveryMethod.selectedIndex);
 
     if (deliveryMethod.selectedIndex === 0) {
         price = price + 5;
     }
-    console.log(textToWrite, numOfToppings, price);
-    document.getElementById('price').textContent = `Hello ${customerName}. Your pizza size ${size} and your toppings are ${textToWrite}. Your chosen delivery method is ${deliveryMethod.value}. Your total price is: ${price} euros`;
+    //console.log(textToWrite, numOfToppings, price);
+    document.getElementById('price').textContent = `Hello ${customerName}. Your pizza size is ${size} and your toppings are ${textToWrite}. Your chosen delivery method is ${deliveryMethod.value}. Your total price is: ${price} euros`;
 } 

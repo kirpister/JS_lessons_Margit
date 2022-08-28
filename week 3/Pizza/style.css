@@ -1,3 +1,46 @@
 body {
     font-family: 'Karla', sans-serif;
+    background-image: url(pizza.jpg);
+}
+
+h2 {
+    text-align: center;
+}
+
+.whiteText {
+    color: green;
+}
+
+.pizzaform {
+    width: 500px;
+    
+    text-align: center;
+}
+
+.pizzaform2 {
+    width: 500px;
+    text-align: center;
+}
+
+.pizzaform3 {
+    width: 500px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    top: 120px;
+}
+
+button {
+    padding: 2px;
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    color: white;
+    border-radius: 3px;
+    width: 70px;
+    margin: 20px;
 }
