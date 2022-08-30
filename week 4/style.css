@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Rubik:wght@300&display=swap');
+
+
+li {
+    display: inline;
+    float: right;
+    padding-left: 50px;
+    margin: 10px 70px 0 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+.title {
+    float: left;
+    letter-spacing: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+   
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+svg {
+display: inline-block;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+
