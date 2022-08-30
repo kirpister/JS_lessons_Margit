@@ -24,10 +24,60 @@
 
 <div class="wrapper">
     <div class="image">
+        <div class="content">
         
+        <h2>Get your quote today!</h2>
+<form>
+        <h3>Please fill in your details.</h3>
+
+        <div>
+            <input type="text" name="name" id="customerName" placeholder="What is your name?">
+        </div>
+<br>
+        <div>
+            <input type="number" name="age" id="customerAge" placeholder="What is your age?"><label for="age"></label>
+        </div>
+
+        <h3>Check all the boxes that apply to you.</h3>
+
+    <div>
+        <input type="checkbox" name="health" value="Hyper Tension"><label for="health status">Hyper Tension</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="health" value="Blood Sugar"><label for="health status">Blood Sugar</label>
+     </div>
+
+     <div>
+        <input type="checkbox" name="health" value="Overweight"><label for="health status">Overweight</label>
+    </div>
+
+        <h3>Give more information about your habits.</h3>
+
+        <div>
+            <input type="checkbox" name="habits" value="smoking"><label for="">Smoking</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="habits" value="alcohol"><label for="">Alcohol</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="habits" value="daily exercise"><label for="">Daily Exercise</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="habits" value="drugs"><label for="">Drugs</label>
+        </div>
+
+        <button type="submit">Get quote!</button>
+</form>
+
+<p id="quote"></p>
+        </div>
     </div>
 </div>
 
-
+<script src="script.js"></script>
 </body>
 </html>
