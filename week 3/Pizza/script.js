@@ -16,7 +16,6 @@ const order = () => {
         price = 15.50;
     } 
 
-
     let customerName = document.getElementById('customer').value;
     let topping = document.querySelectorAll('input[name="topping"]:checked');
     let textToWrite ='';
@@ -33,7 +32,6 @@ const order = () => {
         price = price + 0.50 * (numOfToppings - 4);
     }
     //console.log(textToWrite, numOfToppings, price);
-
 
     let deliveryMethod = document.querySelector('#delivery');
     //console.log(deliveryMethod.selectedIndex);

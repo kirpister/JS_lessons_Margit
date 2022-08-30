@@ -1,25 +1,44 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     background-image: url(pizza.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 h2 {
     text-align: center;
 }
 
+p {
+    padding: 3px;
+}
+
+label {
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
 .whiteText {
     color: green;
+    font-weight:bold;
 }
 
 .pizzaform {
     width: 500px;
-    
     text-align: center;
+    padding: 5px;
 }
 
 .pizzaform2 {
     width: 500px;
     text-align: center;
+    padding: 3px;
 }
 
 .pizzaform3 {
@@ -32,8 +51,20 @@ h2 {
     padding: 20px;
     position: absolute;
     right: 40px;
-    top: 120px;
+    top: 20px;
 }
+
+/* .output-box {
+    width: 420px;
+    height: 100px;
+    background-color: rgb(228, 220, 217);
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+} */
+
+
 
 button {
     padding: 2px;
@@ -44,3 +75,4 @@ button {
     width: 70px;
     margin: 20px;
 }
+
