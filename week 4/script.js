@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const customer = document.querySelector('#customerName');
+const customerName = document.getElementById('customerName').value;
 const age = document.querySelector('#customerAge');
 const customerHealth = document.querySelectorAll('[name="health"]');
 const customerHabits = document.querySelectorAll('[name="habits"]');
@@ -7,6 +8,7 @@ const customerHabits = document.querySelectorAll('[name="habits"]');
 const getQuote = (event) => {
 
     event.preventDefault();
+    
     let customerName = customer.value;
     let customerAge = age.value;
     let healthResult = [];
@@ -16,9 +18,6 @@ const getQuote = (event) => {
     let result = '';
 
     
-
-    
-
     if (customerAge < 18) {
         coef = 0;
     }
@@ -50,11 +49,13 @@ customerHealth.forEach((item) => {
     }
 });
 
+//THIS IS NOT WORKING
+
 customerHabits.forEach((item) => {
     if (item.checked) {
         habitsResult.push(item.value);
     
-        if (item.value = 'daily exercise'){
+        if (item.value == 'daily exercise'){
             coef = coef - 0.05;
         }
         else {
@@ -64,11 +65,12 @@ customerHabits.forEach((item) => {
     }
 });
 
-// console.log(habitsResult);
-// console.log(coef);
+ console.log(habitsResult);
+ console.log(coef);
+
 quote = 500 + coef * 500;
 
-document.querySelector('#quote').textContent = `Your quote is ${quote}.`;
+document.querySelector('#quote').textContent = `Hello ${customerName}.  Your quote is ${quote}.`;
 
 form.reset();
 };
