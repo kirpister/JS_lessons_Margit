@@ -39,6 +39,7 @@ button {
     width: 120px;
     padding: 10px;
     margin-top: 15px;
+    margin-left: 20px;
 }
 
 input {
@@ -105,22 +106,24 @@ svg {
 
 .content {
     display: inline-block;
-    margin-top: 220px;
+    margin-top: 180px;
     margin-left: 180px;
 }
 
 .image-side {
     display: inline-block;
     margin-left: 350px;
+    
 }
 
-/* .output-box {
+ .output-box {
     display: inline-block;
     width: 300px;
     height: 100px;
     border: 1px solid;
     border-radius: 10px;
-} */
+    
+} 
 
 
 

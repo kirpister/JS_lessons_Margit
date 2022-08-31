@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const customer = document.querySelector('#customerName');
-const customerName = document.getElementById('customerName').value;
+const customerName = document.getElementById('customerName');
 const age = document.querySelector('#customerAge');
 const customerHealth = document.querySelectorAll('[name="health"]');
 const customerHabits = document.querySelectorAll('[name="habits"]');
@@ -12,10 +12,10 @@ const getQuote = (event) => {
     let customerName = customer.value;
     let customerAge = age.value;
     let healthResult = [];
-    let habitsResult =[];
+    let habitsResult = [];
     let quote = 0;
     let coef = 0;
-    let result = '';
+    //let result = '';
 
     
     if (customerAge < 18) {
@@ -49,7 +49,7 @@ customerHealth.forEach((item) => {
     }
 });
 
-//THIS IS NOT WORKING
+
 
 customerHabits.forEach((item) => {
     if (item.checked) {
@@ -70,7 +70,7 @@ customerHabits.forEach((item) => {
 
 quote = 500 + coef * 500;
 
-document.querySelector('#quote').textContent = `Hello ${customerName}.  Your quote is ${quote}.`;
+document.querySelector('#quote').textContent = alert(`Hello ${customerName}.  Your risk score is ${quote.toFixed(2)}.`);
 
 form.reset();
 };

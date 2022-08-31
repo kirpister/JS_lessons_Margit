@@ -7,8 +7,7 @@
 body {
     font-family: 'Karla', sans-serif;
     background-image: url(pizza.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat cover cover/center;
 }
 
 h2 {
