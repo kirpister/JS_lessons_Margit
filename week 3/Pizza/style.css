@@ -7,7 +7,8 @@
 body {
     font-family: 'Karla', sans-serif;
     background-image: url(pizza.jpg);
-    background-repeat:no-repeat cover cover/center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -51,18 +52,8 @@ label {
     position: absolute;
     right: 40px;
     top: 20px;
+
 }
-
-/* .output-box {
-    width: 420px;
-    height: 100px;
-    background-color: rgb(228, 220, 217);
-    border-radius: 7px;
-    border: 1px solid white;
-    padding: 5px;
-    text-align: center;
-} */
-
 
 
 button {

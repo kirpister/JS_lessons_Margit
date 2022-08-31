@@ -70,7 +70,7 @@ customerHabits.forEach((item) => {
 
 quote = 500 + coef * 500;
 
-document.querySelector('#quote').textContent = alert(`Hello ${customerName}.  Your risk score is ${quote.toFixed(2)}.`);
+document.querySelector('#quote').textContent = `Hello ${customerName}.  Your risk score is ${quote.toFixed(2)}.`;
 
 form.reset();
 };
