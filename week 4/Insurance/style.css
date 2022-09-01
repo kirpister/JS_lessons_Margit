@@ -70,7 +70,7 @@ svg {
 }
 
 .container {
-    display: flex;
+   
     top: 15px;
     width: 100%;
     display: inline-block;
@@ -101,6 +101,7 @@ svg {
 
 .wrapper {
     width: 100%;
+    display: flex;
 }
 
 
@@ -111,17 +112,29 @@ svg {
 }
 
 .image-side {
-    display: inline-block;
-    margin-left: 350px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img {
+    width: 270px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 250px;
 }
 
  .output {
-    display: inline-block;
-    
-
-    
-} 
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+    justify-content: center;
+    margin-top: 200px;
+    height: 70px;
+    width: 330px;
+    color:#1363DF;
+ } 
 
 
 
