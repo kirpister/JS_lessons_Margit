@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body id="gradient">
+
+    <div class="content">
+
+    <h2>Linear Gradient Generator</h2>
+
+<div class="color-buttons">
+    <p>Colors</p>
+    <input class="color1" type="color" id="color1" value="#052CF0">
+    <input class="color2" type="color" id="color2" value="#FC0303">
+</div>
+
+<p>Directions</p>
+<div>
+<form>
+
+    <label>
+        <input type="radio" name="direction" value="down-right" onclick="setDirection()" checked>
+        <img src="img/down-right-arrow.png" alt="arrow"> 
+    </label>
+
+    <label>
+        <input type="radio" name="direction" value="down" onclick="setDirection()">
+        <img src="img/down-arrow.png" alt="arrow"> 
+    </label>
+
+    <label>
+        <input type="radio" name="direction" value="down-left" onclick="setDirection()">
+        <img src="img/down-left-arrow.png" alt="arrow"> 
+    </label> <br>
+
+    <label>
+        <input type="radio" name="direction" value="right" onclick="setDirection()">
+        <img src="img/right-arrow.png" alt="arrow"> 
+    </label>
+
+    <label>
+        <input type="radio" name="direction" value="left" onclick="setDirection()">
+        <img src="img/left-arrow.png" alt="arrow"> 
+    </label><br>
+
+    <label>
+        <input type="radio" name="direction" value="up-right" onclick="setDirection()">
+        <img src="img/up-right-arrow.png" alt="arrow"> 
+    </label>
+
+    <label>
+        <input type="radio" name="direction" value="up" onclick="setDirection()">
+        <img src="img/up-arrow.png" alt="arrow"> 
+    </label>
+
+    <label>
+        <input type="radio" name="direction" value="up-left" onclick="setDirection()">
+        <img src="img/up-left-arrow.png" alt="arrow"> 
+    </label>
+
+</form>
+
+</div>
+
+<p>Get CSS</p>
+
+<h4></h4>
+
+    </div>
+
+  
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6ec99a1bc7.js" crossorigin="anonymous"></script>
+</body>
+</html>

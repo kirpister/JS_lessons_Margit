@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cars database</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        
+        <div class="car-form">
+
+            <form>
+                <h3>Insert car data</h3>
+                <div>
+                    <label for="liscence">Liscence Number</label>
+                    <input type="text" name="" id="liscence"/>
+                </div>
+
+                <div>
+                    <label for="maker">Car maker</label>
+                    <input type="text" name="" id="maker"/>
+                </div>
+
+                <div>
+                    <label for="model">Car model</label>
+                    <input type="text" name="" id="model"/>
+                </div>
+
+                <div>
+                    <label for="owner">Car owner</label>
+                    <input type="text" name="" id="owner"/>
+                </div>
+
+                <div>
+                    <label for="price">Car price</label>
+                    <input type="text" name="" id="price"/>
+                </div>
+
+                <div>
+                    <label for="color">Car color</label>
+                    <input type="text" name="" id="color"/>
+                </div>
+
+                <button onclick="addCar()">Add Car</button>  <button onclick="reset()">Reset</button>
+
+            </form>
+        </div>
+
+        <div class="car-table">
+<h3>Cars database</h3>
+    <table id="cars">
+        <tr>
+          <th>Liscence</th>
+          <th>Maker</th>
+          <th>Model</th>
+          <th>Owner</th>
+          <th>Price</th>
+          <th>Color</th>
+        </tr>
+        <tr>
+            <td>bleep</td>
+            <td>bloop</td>
+            <td>bleep</td>
+            <td>bloop</td>
+            <td>bleep</td>
+            <td>bloop</td>
+          </tr>
+
+          </table>
+
+       </div>
+
+    </div>
+
+    <div class="searchCar">
+<h3>Search car by liscence number</h3>
+<label for="serach">Liscence number</label>
+<input type="text" name="" id="search"/>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: aquamarine;
+    border: 1px solid #333;
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h3 {
+    margin: 15px;
+}
+
+form {
+    margin: 15px;
+}
+
+input {
+    display: inline-block;
+    margin-left: 55px;
+    justify-content: end;
+} 
+
+label {
+    display: flex;
+} 
+
+button {
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.car-form {
+    display: inline-block;
+    text-align: left;
+    margin: 65px;
+    width: 35vw;
+    border: 1px solid #333;
+}
+
+.car-table {
+    display: inline-block;
+    margin: 40px;
+    width: 30vw;
+    justify-content: end;
+    margin-right: 150px;
+    margin-top: 75px;
+    
+}
+
+.searchCar {
+    display: inline-block;
+    margin-left: 65px;
+    border: 1px solid #333;
+    width: 35vw;
+    height: 150px;
+}
