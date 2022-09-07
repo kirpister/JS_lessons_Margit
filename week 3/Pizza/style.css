@@ -1,27 +1,49 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     background-image: url(pizza.jpg);
+<<<<<<< HEAD
     background-position: cover;
 background-repeat: no-repeat;    
+=======
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
 }
 
 h2 {
     text-align: center;
 }
 
+p {
+    padding: 3px;
+}
+
+label {
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
 .whiteText {
     color: green;
+    font-weight:bold;
 }
 
 .pizzaform {
     width: 500px;
-    
     text-align: center;
+    padding: 5px;
 }
 
 .pizzaform2 {
     width: 500px;
     text-align: center;
+    padding: 3px;
 }
 
 .pizzaform3 {
@@ -34,8 +56,10 @@ h2 {
     padding: 20px;
     position: absolute;
     right: 40px;
-    top: 120px;
+    top: 20px;
+
 }
+
 
 button {
     padding: 2px;
@@ -46,3 +70,4 @@ button {
     width: 70px;
     margin: 20px;
 }
+

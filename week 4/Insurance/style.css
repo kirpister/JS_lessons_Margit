@@ -51,12 +51,20 @@ label {
 }
 
 
+<<<<<<< HEAD
  svg {
+=======
+svg {
+>>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
 
 /* NAVIGATION */
 
@@ -70,7 +78,11 @@ label {
 }
 
 .container {
+<<<<<<< HEAD
     display: flex;
+=======
+   
+>>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
     top: 15px;
     width: 100%;
     display: inline-block;
@@ -133,8 +145,13 @@ label {
     margin-top: 200px;
     height: 70px;
     width: 330px;
+<<<<<<< HEAD
     color: #1363DF;
 } 
+=======
+    color:#1363DF;
+ } 
+>>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
 
 
 
