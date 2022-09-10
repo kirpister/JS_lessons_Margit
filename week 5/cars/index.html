@@ -18,42 +18,42 @@
                 <h3>Insert car data</h3>
                 <div>
                     <label for="liscence">Liscence Number</label>
-                    <input type="text" name="" id="liscence"/>
+                    <input type="text" name="car" id="liscence"/>
                 </div>
 
                 <div>
                     <label for="maker">Car maker</label>
-                    <input type="text" name="" id="maker"/>
+                    <input type="text" name="car" id="maker"/>
                 </div>
 
                 <div>
                     <label for="model">Car model</label>
-                    <input type="text" name="" id="model"/>
+                    <input type="text" name="car" id="model"/>
                 </div>
 
                 <div>
                     <label for="owner">Car owner</label>
-                    <input type="text" name="" id="owner"/>
+                    <input type="text" name="car" id="owner"/>
                 </div>
 
                 <div>
                     <label for="price">Car price</label>
-                    <input type="text" name="" id="price"/>
+                    <input type="text" name="car" id="price"/>
                 </div>
 
                 <div>
                     <label for="color">Car color</label>
-                    <input type="text" name="" id="color"/>
+                    <input type="text" name="car" id="color"/>
                 </div>
 
-                <button onclick="addCar()">Add Car</button>  <button onclick="reset()">Reset</button>
+                <button type="submit" >Add Car</button>  <button id="reset-btn" onclick="resetTable()">Reset</button>
 
             </form>
         </div>
 
         <div class="car-table">
 <h3>Cars database</h3>
-    <table id="cars">
+    <table id="car-table">
         <tr>
           <th>Liscence</th>
           <th>Maker</th>
@@ -62,16 +62,8 @@
           <th>Price</th>
           <th>Color</th>
         </tr>
-        <tr>
-            <td>bleep</td>
-            <td>bloop</td>
-            <td>bleep</td>
-            <td>bloop</td>
-            <td>bleep</td>
-            <td>bloop</td>
-          </tr>
-
-          </table>
+       
+        </table>
 
        </div>
 
@@ -79,9 +71,13 @@
 
     <div class="searchCar">
 <h3>Search car by liscence number</h3>
-<label for="serach">Liscence number</label>
-<input type="text" name="" id="search"/>
+<label for="liscenceNum">Liscence number</label>
+<input type="text" name="numSearch" id="search"/>
+<br>
+<button onclick="searchCar()" id="carSearch" type="submit">Search</button> 
+<p id="output"></p>
+</div>
 
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
