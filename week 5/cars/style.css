@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(85, 81, 81);
-    background-image: url(mini-pic.jpg);
+    background-image: url(mini-pic.png);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,13 +25,18 @@ table {
 }
 
 th {
-    background-color:  rgb(156, 176, 186);
+    background-color:  rgb(48, 65, 73);
     border: 1px solid #333;
     padding: 6px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #3f3f3f;
+    color: rgb(156, 176, 186);
+}
+
+tr:nth-child(odd) {
+    background-color:   rgb(48, 65, 73);
     color: rgb(156, 176, 186);
 }
 
@@ -61,39 +66,39 @@ button {
     border-radius: 5px;
     width: 70px;
     height: 30px;
-    margin: 10px;
+    margin: 15px;
     font-family: 'Poppins', sans-serif;
     padding: 5px;
-    
 }
 
 .wrapper {
     display: flex;
+    width: 100vw;
 }
 
 .car-form {
     display: inline-block;
     text-align: left;
-    margin: 55px;
+    margin: 35px;
     padding: 5px;
-    width: 35vw;
-    
+    width: 30vw;
 }
 
 .car-table {
     display: inline-block;
     margin: 40px;
     width: 30vw;
-    justify-content: end;
-    margin-right: 150px;
-    margin-top: 50px;
+    margin-top: 36px;
     padding: 5px;
-    
 }
 
 .searchCar {
     display: inline-block;
-    margin-left: 75px;
-    width: 35vw;
+    margin-top: 40px;
+}
+
+#output {
+    width: 25vw;
     height: 150px;
+    margin-top: 55px;
 }

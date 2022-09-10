@@ -17,7 +17,7 @@
             <form>
                 <h3>Insert car data</h3>
                 <div>
-                    <label for="liscence">Liscence Number</label>
+                    <label for="liscence">Licence Number</label>
                     <input type="text" name="car" id="liscence"/>
                 </div>
 
@@ -51,32 +51,31 @@
             </form>
         </div>
 
+        <div class="searchCar">
+            <h3>Search by licence number</h3>
+            <label for="liscenceNum">Licence number</label>
+            <input type="text" name="numSearch" id="search"/>
+            <br>
+            <button onclick="searchCar()" id="carSearch" type="submit">Search</button> 
+            <p id="output"></p>
+        </div>
+
+
         <div class="car-table">
-<h3>Cars database</h3>
-    <table id="car-table">
-        <tr>
-          <th>Liscence</th>
-          <th>Maker</th>
-          <th>Model</th>
-          <th>Owner</th>
-          <th>Price</th>
-          <th>Color</th>
-        </tr>
-       
+            <h3>Cars database</h3>
+        <table id="car-table">
+            <tr>
+            <th>Licence</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Owner</th>
+            <th>Price</th>
+            <th>Color</th>
+            </tr>
         </table>
-
-       </div>
-
+        </div>
     </div>
 
-    <div class="searchCar">
-<h3>Search car by liscence number</h3>
-<label for="liscenceNum">Liscence number</label>
-<input type="text" name="numSearch" id="search"/>
-<br>
-<button onclick="searchCar()" id="carSearch" type="submit">Search</button> 
-<p id="output"></p>
-</div>
 
     <script src="script.js"></script>
 </body>
