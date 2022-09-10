@@ -7,13 +7,10 @@
 body {
     font-family: 'Karla', sans-serif;
     background-image: url(pizza.jpg);
-<<<<<<< HEAD
     background-position: cover;
-background-repeat: no-repeat;    
-=======
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     background-size: cover;
->>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
+
 }
 
 h2 {

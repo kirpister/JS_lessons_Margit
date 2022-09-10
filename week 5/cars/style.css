@@ -8,21 +8,31 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(85, 81, 81);
+    background-image: url(mini-pic.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 100vh;
+    color: rgb(156, 176, 186);
 }
 
 table {
     border-collapse: collapse;
     border: 1px solid #333;
+    color: white;
 }
 
 th {
-    background-color: aquamarine;
+    background-color:  rgb(156, 176, 186);
     border: 1px solid #333;
     padding: 6px;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
+    color: rgb(156, 176, 186);
 }
 
 h3 {
@@ -41,19 +51,21 @@ input {
 
 label {
     display: flex;
+    padding: 5px;
 } 
 
 button {
-    background-color: aquamarine;
-    border: 1px solid aquamarine;
+    background-color:  rgb(156, 176, 186);
+    border: 1px solid  rgb(156, 176, 186);
+    color: black;
     border-radius: 5px;
     width: 70px;
     height: 30px;
     margin: 10px;
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    padding: 5px;
+    
 }
-
 
 .wrapper {
     display: flex;
@@ -62,9 +74,10 @@ button {
 .car-form {
     display: inline-block;
     text-align: left;
-    margin: 65px;
+    margin: 55px;
+    padding: 5px;
     width: 35vw;
-    border: 1px solid #333;
+    
 }
 
 .car-table {
@@ -73,14 +86,14 @@ button {
     width: 30vw;
     justify-content: end;
     margin-right: 150px;
-    margin-top: 75px;
+    margin-top: 50px;
+    padding: 5px;
     
 }
 
 .searchCar {
     display: inline-block;
-    margin-left: 65px;
-    border: 1px solid #333;
+    margin-left: 75px;
     width: 35vw;
     height: 150px;
 }
