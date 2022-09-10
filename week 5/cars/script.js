@@ -51,14 +51,14 @@ const addCar = (e) => {
 
 const searchCar = () => {
 
+    searchResult = `No such car in database, try again!`;
+
     listCars.forEach(function(car){
-        if (car.liscence === search.value) {
+       
+        if (car.liscence == search.value) {
             searchResult = `Licence number ${car.liscence} is ${car.maker} ${car.model} and it belongs to ${car.owner}.`
         } 
-        else {
-            searchResult = `No such car in database, try again!`
-            }
-        });
+      });
 
         document.getElementById('output').textContent = searchResult;
 }
