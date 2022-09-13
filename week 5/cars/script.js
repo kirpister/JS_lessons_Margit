@@ -1,4 +1,5 @@
-let listCars = new Array;
+//let listCars = new Array;
+let listCars = [];
 const liscence = document.querySelector('#liscence');
 const maker = document.querySelector('#maker');
 const model = document.querySelector('#model');
