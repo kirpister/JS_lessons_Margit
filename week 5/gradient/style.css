@@ -15,6 +15,10 @@ p {
     padding: 10px;
 }
 
+h3 {
+    padding: 15px;
+}
+
 textarea {
     padding: 10px;
     margin-top: 20px;
@@ -30,7 +34,6 @@ textarea {
 }
 
 input[type="color"] {
-    -webkit-appearance: none;
     background-color: transparent;
     width: 80px;
     height: 30px;
@@ -38,10 +41,10 @@ input[type="color"] {
 }
 
 [type="radio"] {
-   position:absolute;
-   opacity:0.0;
-   width:0px;
-   height:0px;
+   position: absolute;
+   opacity: 0.0;
+   width: 0px;
+   height: 0px;
 }
 
 [type="radio"]:checked + img {

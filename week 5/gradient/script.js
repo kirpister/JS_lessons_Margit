@@ -1,10 +1,9 @@
 const color1 = document.querySelector("#color1");
 const color2 = document.querySelector("#color2");
 let body = document.getElementById("gradient");
-let getCss = document.querySelector("h4");
+let getCss = document.querySelector("p");
 
 const getGradient = (event) => {
-    
     body.style.backgroundImage = "linear-gradient(to top, " 
     + color1.value 
     + ", "
@@ -16,8 +15,7 @@ color1.addEventListener("input", getGradient);
 color2.addEventListener("input", getGradient);
 
 const setDirection = (event) => {
-    
-    
+
 let direction = document.querySelector('input[name="direction"]:checked').value
 
 if (direction === "down-right") {
@@ -51,10 +49,8 @@ else if (direction === "up") {
 else if (direction === "up-left") {
     direction = body.style.backgroundImage = "linear-gradient(to top left , " +color1.value+ ", "+ color2.value + ")";
     }
-      console.log(direction);
-
+     
     getCss.textContent = body.style.backgroundImage + ";"; 
-    console.log(getCss);
 } 
 
 color1.addEventListener("input", setDirection);
