@@ -53,6 +53,6 @@ else if (direction === "up-left") {
     getCss.textContent = body.style.backgroundImage + ";"; 
 } 
 
-color1.addEventListener("input", setDirection);
-color2.addEventListener("input", setDirection);
+color1.addEventListener("click", setDirection);
+color2.addEventListener("click", setDirection);
 
