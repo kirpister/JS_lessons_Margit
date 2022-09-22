@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px; 
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 25px;
+    color:  #f5610c;
+}
+
+
+body {
+    background: rgb(6,6,6);
+    background: radial-gradient(circle, rgba(6,6,6,1) 47%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
+}
+
+.gamearea {
+    display: flex;
+    width: 75vw;
+    margin: 80px 200px 50px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    margin: 5px auto;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: 
+        linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, .85) 40%) no-repeat 100% 0,
+        linear-gradient(60deg, rgba(42, 41, 40, .85) 60%, transparent 60%) no-repeat 0 100%,
+        repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
+    background-size: 50% 100%, 100% 50%, 100% 100%;
+    }
+
+.circle:after {
+    position: absolute;
+    top: 55%; left: 55%;
+    margin: -35px;
+    border: solid 1px #d9a388;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #da5b33,
+    inset 0 0 0 27px #da5b33;
+    background: #b5ac9a;
+    content: '';
+}
+
+/*.circle {
+    display: flex;
+    justify-content: space-around;
+    background-color: #514f4f;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 15px;
+} */
+
+button {
+    background-color: #f5610c;
+    color: rgb(9, 8, 8);
+    border: 1px solid #f5610c;
+    border-radius: 8px;
+    padding: 13px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 25px;
+}
+
+.btns {
+    text-align: center;
+}
+
+.active {
+    background: #c92e2e;
+    display: block;
+}
+
+/* MODAL */
+
+#overlay {
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    padding: 2rem;
+    width: 40%;
+    height: 25%;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* #overlay {
+    display: none;
+}
+      
+#overlay.visible {
+    display: flex;
+}
+      
+
+#overlay.visible .modal {
+    position: relative;
+    background: white;
+    min-height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    color: #032330;
+    padding: 3rem;
+}
+      
+#overlay.visible .close {
+    position: absolute;
+    top: 20px;        
+    right: 20px;
+} */
