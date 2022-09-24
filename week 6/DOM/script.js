@@ -3,6 +3,9 @@ const backButton = document.querySelector('#to-top');
 const mobButton = document.querySelector('#mob-btn');
 const nav = document.querySelector('nav');
 const links = document.querySelectorAll('nav ul li a');
+const modalButton = document.querySelector('#modalButton');
+const closeButton = document.querySelector('#closeButton');
+const overlay = document.querySelector('.overlay');
 
 window.onscroll = function () {
         scrollFunction();
@@ -37,5 +40,12 @@ for (const link of links) {
         link.addEventListener('click', mobMenu);
 }
 
+const modal = () => {
+        overlay.classList.toggle('visible');
+      };
+      
+
 backButton.addEventListener('click', getToTop);
 mobButton.addEventListener('click', mobMenu);
+modalButton.addEventListener('click', modal);
+closeButton.addEventListener('click', modal);

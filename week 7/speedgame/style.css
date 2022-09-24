@@ -96,11 +96,12 @@ button {
 
 #overlay {
     visibility: hidden;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -110,22 +111,40 @@ button {
 .modal {
     background-color: white;
     padding: 2rem;
-    width: 40%;
-    height: 25%;
+    width: 45%;
+    height: 45%;
     border-radius: 10px;
     position: relative;
+   
 }
 
-/* #overlay {
-    display: none;
+.modal h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
 }
-      
-#overlay.visible {
+
+.modal p {
+    font-family: 'Oswald', sans-serif;
+    margin: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.modal button {
+    padding: 3px 10px 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+  
+  #overlay.visible {
     display: flex;
-}
-      
-
-#overlay.visible .modal {
+  }
+  
+  
+ #overlay.visible .modal {
     position: relative;
     background: white;
     min-height: 50vh;
@@ -133,10 +152,10 @@ button {
     border-radius: 10px;
     color: #032330;
     padding: 3rem;
-}
-      
-#overlay.visible .close {
+  }
+  
+  #overlay.visible .close {
     position: absolute;
-    top: 20px;        
-    right: 20px;
-} */
+    top: 10px;
+    right: 10px;
+  }

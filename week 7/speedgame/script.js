@@ -4,6 +4,7 @@ const circles = document.querySelectorAll('.circle');
 const scoreCount = document.querySelector('#score');
 const overlay = document.querySelector('#overlay');
 const closeBtn = document.querySelector('#closeBtn');
+const endScore = document.querySelector('#endscore');
 
 let score = 0;
 let active = 0;
@@ -29,6 +30,7 @@ const clickCircle = (i) => {
     rounds--;
    }
     scoreCount.textContent = `${score}`
+    endScore.textContent = `Your score was: ${score}`
 };
 
 const startGame = () => {
@@ -71,8 +73,20 @@ const resetGame = () => {
     window.location.reload();
 }
 
-startBtn.addEventListener('click', startGame);
-stopBtn.addEventListener('click', stopGame);
-closeBtn.addEventListener('click', resetGame);
+const modal = () => {
+    overlay.classList.toggle('visible');
+    
+  };
 
+  
+
+startBtn.addEventListener('click', startGame);
+//stopBtn.addEventListener('click', stopGame);
+closeBtn.addEventListener('click', resetGame);
+//stopBtn.addEventListener('click', modal);
+
+stopBtn.addEventListener('click',() => {
+stopGame();
+modal();
+});
 
