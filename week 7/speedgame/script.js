@@ -5,12 +5,18 @@ const scoreCount = document.querySelector('#score');
 const overlay = document.querySelector('#overlay');
 const closeBtn = document.querySelector('#closeBtn');
 const endScore = document.querySelector('#endscore');
+const insult = document.querySelector('#insult');
 
 let score = 0;
 let active = 0;
 let timer;
 let pace = 1000;
 let rounds = 0;
+
+let gameBeep = new Audio('sounds/sound2.mp3')
+let gameOver = new Audio('sounds/end_sound.mp3')
+
+
 
 // getting a random number
 const getRandomNum = (min, max) => {
@@ -21,7 +27,11 @@ circles.forEach((circle, i) => {
     circle.addEventListener('click', () => clickCircle(i));
 });
 
+stopBtn.style.visibility = 'hidden';
+
 const clickCircle = (i) => {
+
+    gameBeep.play();
    
    if (i !== active) {
     stopGame();
@@ -31,14 +41,23 @@ const clickCircle = (i) => {
    }
     scoreCount.textContent = `${score}`
     endScore.textContent = `Your score was: ${score}`
+
+    if (score < 25) {
+        insult.textContent = `Did you even try?`
+    } else {
+        insult.textContent = `Ehh, that's okay I guess..`
+    }
 };
 
 const startGame = () => {
 
-    if (rounds >= 3) {
-        return endGame();
-    }
+    startBtn.style.visibility = 'hidden';
+    stopBtn.style.visibility = 'visible';
+    
 
+    if (rounds >= 3) {
+        return stopGame();
+    }
 
     let nextActive = pickNew(active);
 
@@ -67,6 +86,7 @@ const startGame = () => {
 const stopGame = () => {
     overlay.style.visibility = 'visible';
     clearTimeout(timer);
+    gameOver.play();
 };
 
 const resetGame = () => {
