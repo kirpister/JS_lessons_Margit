@@ -32,7 +32,7 @@ body {
     height: 100%;
     width: 100%;
     background: rgb(6,6,6);
-    background-image: radial-gradient(circle, rgba(6,6,6,1) 57%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
+    background-image: radial-gradient(circle, rgba(6,6,6,1) 55%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
     background-attachment: fixed;
 }
 
@@ -75,6 +75,8 @@ body {
         linear-gradient(60deg, rgba(42, 41, 40, .85) 60%, transparent 60%) no-repeat 0 100%,
         repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
     background-size: 50% 100%, 100% 50%, 100% 100%;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .circle:after {

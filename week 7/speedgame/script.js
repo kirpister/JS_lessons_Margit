@@ -17,7 +17,7 @@ let rounds = 0;
 
 let gameBeep = new Audio('sounds/sound2.mp3')
 let gameOver = new Audio('sounds/end_sound.mp3')
-//let gameStart = new Audio('')
+let gameStart = new Audio('sounds/start_sound.mp3')
 
 
 // getting a random number
@@ -26,9 +26,9 @@ const getRandomNum = (min, max) => {
 };
 
 circles.forEach((circle, i) => {
+
     circle.addEventListener('click', () => clickCircle(i));
 });
-
 
 const clickCircle = (i) => {
 
@@ -36,8 +36,7 @@ const clickCircle = (i) => {
 
    if (i !== active) {
     stopGame();
-   }
-    else {
+    } else {
     score++;
     rounds--;
    }
@@ -54,8 +53,13 @@ const clickCircle = (i) => {
 
 const startGame = () => {
 
+    gameStart.play();
+    
     startBtn.style.visibility = 'hidden';
     stopBtn.style.visibility = 'visible';
+
+    for (let i = 0; i < circles.length; i++)
+    circles[i].style.pointerEvents = "auto";
     
     if (rounds >= 2) {
         return stopGame();
