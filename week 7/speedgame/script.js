@@ -16,12 +16,10 @@ let pace = 1200;
 let rounds = 0;
 
 // SOUNDS
-let gameBeep = new Audio('sounds/sound2.mp3')
-let gameOver = new Audio('sounds/vinyl-scratch2.mp3')
-let gameStart = new Audio('sounds/bass-sounds.mp3')
+let gameBeep = new Audio('sound2.mp3')
+let gameOver = new Audio('vinyl-scratch2.mp3')
+let gameStart = new Audio('bass-sounds.mp3')
 
-
-// getting a random number
 const getRandomNum = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
