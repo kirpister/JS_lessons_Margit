@@ -12,7 +12,7 @@ stopBtn.style.visibility = 'hidden';
 let score = 0;
 let active = 0;
 let timer;
-let pace = 1200;
+let pace = 1000;
 let rounds = 0;
 
 // SOUNDS
