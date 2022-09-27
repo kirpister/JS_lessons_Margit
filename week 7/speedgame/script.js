@@ -7,6 +7,8 @@ const closeBtn = document.querySelector('#closeBtn');
 const endScore = document.querySelector('#endscore');
 const insult = document.querySelector('#insult');
 
+stopBtn.style.visibility = 'hidden';
+
 let score = 0;
 let active = 0;
 let timer;
@@ -15,7 +17,7 @@ let rounds = 0;
 
 let gameBeep = new Audio('sounds/sound2.mp3')
 let gameOver = new Audio('sounds/end_sound.mp3')
-
+//let gameStart = new Audio('')
 
 
 // getting a random number
@@ -27,22 +29,23 @@ circles.forEach((circle, i) => {
     circle.addEventListener('click', () => clickCircle(i));
 });
 
-stopBtn.style.visibility = 'hidden';
 
 const clickCircle = (i) => {
 
     gameBeep.play();
-   
+
    if (i !== active) {
     stopGame();
-   } else {
+   }
+    else {
     score++;
     rounds--;
    }
-    scoreCount.textContent = `${score}`
-    endScore.textContent = `Your score was: ${score}`
 
-    if (score < 25) {
+    scoreCount.textContent = `${score} records collected.`
+    endScore.textContent = `${score} records collected.`
+
+    if (score < 20) {
         insult.textContent = `Did you even try?`
     } else {
         insult.textContent = `Ehh, that's okay I guess..`
@@ -54,8 +57,7 @@ const startGame = () => {
     startBtn.style.visibility = 'hidden';
     stopBtn.style.visibility = 'visible';
     
-
-    if (rounds >= 3) {
+    if (rounds >= 2) {
         return stopGame();
     }
 
@@ -65,8 +67,7 @@ const startGame = () => {
     circles[active].classList.remove('active');
 
     active = nextActive;
-    console.log('current number', active);
-
+    
     timer = setTimeout(startGame, pace);
     pace = pace -10;
 
@@ -91,19 +92,14 @@ const stopGame = () => {
 
 const resetGame = () => {
     window.location.reload();
-}
+};
 
 const modal = () => {
     overlay.classList.toggle('visible');
-    
-  };
-
-  
+};
 
 startBtn.addEventListener('click', startGame);
-//stopBtn.addEventListener('click', stopGame);
 closeBtn.addEventListener('click', resetGame);
-//stopBtn.addEventListener('click', modal);
 
 stopBtn.addEventListener('click',() => {
 stopGame();

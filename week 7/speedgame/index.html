@@ -10,32 +10,39 @@
 <body>
     
 <h1>Speedgame!</h1>
+<p class="top-p">Collect as many records as you can!</p>
 
-<h2>Your score is: <span id="score">?</span></h2>
+<div class="score-area">
+<h2><span id="score"></span></h2>
+</div>
 
 <div class="gamearea">
 
 <div class="circle"><span id=""></span></div>
 <div class="circle"><span id=""></span></div>
-<div class="circle"><span id="">3</span></div>
-<div class="circle"><span id="">4</span></div>
+<div class="circle"><span id=""></span></div>
+<div class="circle"><span id=""></span></div>
 
 </div>
 
 <div class="btns-grid">
 <button class="btn1" id="start">START</button>
 <button class="btn2" id="stop">STOP</button>
+
+
 </div>
 
 <div id="overlay">
     <div class="modal">
         <h3>Game over!</h3>
-        <p id="endscore">Your score was:</p>
+        <p id="endscore">:</p>
         <p id="insult"></p>
 
         <button class="close" id="closeBtn">Try again?</button>
     </div>
 </div>
+
+<p class="credit-p">Cool vinyl record CSS from <a href="https://codepen.io/thebabydino">here.</a></p>
 
 <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+:root {
+    --orange: #f5610c;
+    --main-font: 'Oswald', sans-serif;
+}
 
 * {
     margin: 0;
@@ -17,12 +21,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     text-align: center;
-    margin: 55px;
-    color:  #f5610c;
+    font-size: 1.5rem;
+    margin: 5px;
+    color:  var(--orange);
 }
-
 
 body {
     height: 100%;
@@ -31,6 +35,26 @@ body {
     background-image: radial-gradient(circle, rgba(6,6,6,1) 57%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
     background-attachment: fixed;
 }
+
+/* SCORE */
+
+.top-p {
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--orange);
+    padding: 10px;
+}
+
+.score-area {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 41%; 
+}
+
+/* MAIN GAME */
 
 .gamearea {
     display: flex;
@@ -51,7 +75,7 @@ body {
         linear-gradient(60deg, rgba(42, 41, 40, .85) 60%, transparent 60%) no-repeat 0 100%,
         repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
     background-size: 50% 100%, 100% 50%, 100% 100%;
-    }
+}
 
 .circle:after {
     position: absolute;
@@ -62,10 +86,19 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 0 4px #f9411c,
     inset 0 0 0 27px #f9411c;
-    /*background: #b5ac9a;*/
     content: '';
 }
 
+.active {
+    background: 
+        linear-gradient(30deg, transparent 40%, rgba(138, 132, 126, 0.85) 40%) no-repeat 100% 0,
+        linear-gradient(60deg, rgba(138, 132, 126, 0.85) 60%, transparent 60%) no-repeat 0 100%,
+        repeating-radial-gradient(#807973, #7b7875 4px, #3c3b3a 5px, #7a7673 6px);
+    background-size: 50% 100%, 100% 50%, 100% 100%;
+    display: block;
+}
+
+/* BUTTONS */ 
 
 button {
     background-image: linear-gradient(45deg, #f9411c 0%, #F09819  51%, #f9411c  100%);
@@ -73,7 +106,7 @@ button {
     border: 1px solid #f5610c;
     border-radius: 10px;
     padding: 15px;
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-weight: bolder;
     text-align: center;
 }
@@ -92,14 +125,20 @@ button {
     grid-row: 1;
   }
 
-.active {
-    /*background: #c92e2e;*/
-    background: 
-        linear-gradient(30deg, transparent 40%, rgba(138, 132, 126, 0.85) 40%) no-repeat 100% 0,
-        linear-gradient(60deg, rgba(138, 132, 126, 0.85) 60%, transparent 60%) no-repeat 0 100%,
-        repeating-radial-gradient(#807973, #7b7875 4px, #3c3b3a 5px, #7a7673 6px);
-    background-size: 50% 100%, 100% 50%, 100% 100%;
-    display: block;
+/* CREDIT */
+
+.credit-p {
+    color: var(--orange);
+    font-family: var(--main-font);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.5rem;
+    margin-top: 15px;
+}
+
+.credit-p a {
+    text-decoration: none;
+    color: var(--orange);
 }
 
 /* MODAL */
@@ -120,23 +159,21 @@ button {
 
 .modal {
     background: linear-gradient(45deg, #f9411c 0%, #F09819  51%, #f9411c  100%);
-    background-blend-mode: multiply;
     padding: 2rem;
     width: 45%;
     height: 45%;
     border-radius: 10px;
     position: relative;
-   
 }
 
 .modal h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-size: 2.5rem;
     text-align: center;
 }
 
 .modal p {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     margin: 1.5rem;
     font-size: 2rem;
     text-align: center;
@@ -150,13 +187,11 @@ button {
     border: 1px solid #333;
 }
 
-  
-  #overlay.visible {
+#overlay.visible {
     display: flex;
-  }
+}
   
-  
- #overlay.visible .modal {
+#overlay.visible .modal {
     position: relative;
     background: white;
     min-height: 50vh;
@@ -164,10 +199,44 @@ button {
     border-radius: 10px;
     color: #032330;
     padding: 3rem;
-  }
+}
   
-  #overlay.visible .close {
+#overlay.visible .close {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.credit-p {
+    color: var(--orange);
+    font-family: var(--main-font);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.5rem;
+    margin-top: 15px;
+}
+
+.credit-p a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+  @media only screen and (max-width: 800px) {
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle::after {
+        position: absolute;
+        top: 65%; left: 65%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal {
+        width: 250px;
+        height: 250px;
+    }
   }
