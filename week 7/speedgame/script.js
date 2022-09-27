@@ -5,19 +5,20 @@ const scoreCount = document.querySelector('#score');
 const overlay = document.querySelector('#overlay');
 const closeBtn = document.querySelector('#closeBtn');
 const endScore = document.querySelector('#endscore');
-const insult = document.querySelector('#insult');
+const message = document.querySelector('#message');
 
 stopBtn.style.visibility = 'hidden';
 
 let score = 0;
 let active = 0;
 let timer;
-let pace = 1000;
+let pace = 1200;
 let rounds = 0;
 
+// SOUNDS
 let gameBeep = new Audio('sounds/sound2.mp3')
-let gameOver = new Audio('sounds/end_sound.mp3')
-let gameStart = new Audio('sounds/start_sound.mp3')
+let gameOver = new Audio('sounds/vinyl-scratch2.mp3')
+let gameStart = new Audio('sounds/bass-sounds.mp3')
 
 
 // getting a random number
@@ -26,7 +27,6 @@ const getRandomNum = (min, max) => {
 };
 
 circles.forEach((circle, i) => {
-
     circle.addEventListener('click', () => clickCircle(i));
 });
 
@@ -44,10 +44,12 @@ const clickCircle = (i) => {
     scoreCount.textContent = `${score} records collected.`
     endScore.textContent = `${score} records collected.`
 
-    if (score < 20) {
-        insult.textContent = `Did you even try?`
+    if (score < 10) {
+        message.textContent = `Come on, more records!!`
+    } else if (score < 20) {
+        message.textContent = `That's a decent haul!`
     } else {
-        insult.textContent = `Ehh, that's okay I guess..`
+        message.textContent = `Whoa, so many records!!`
     }
 };
 
@@ -61,8 +63,8 @@ const startGame = () => {
     for (let i = 0; i < circles.length; i++)
     circles[i].style.pointerEvents = "auto";
     
-    if (rounds >= 2) {
-        return stopGame();
+    if (rounds >= 3) {
+        return stopGame(); 
     }
 
     let nextActive = pickNew(active);
@@ -89,6 +91,8 @@ const startGame = () => {
 };
 
 const stopGame = () => {
+
+    gameStart.pause();
     overlay.style.visibility = 'visible';
     clearTimeout(timer);
     gameOver.play();
