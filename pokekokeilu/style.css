@@ -14,7 +14,7 @@
 }
 
 html {
-    background-color: #333;
+    background-color: rgb(248, 160, 160);
     background-blend-mode: lighten;
     background-attachment: fixed;
 }
