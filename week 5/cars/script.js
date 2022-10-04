@@ -42,7 +42,6 @@ const addCar = (e) => {
             html += "<td>" + iCar.price+"</td>";
             html += "<td>" + iCar.color+"</td>";
             html += "</tr>";
-    
     }                
     html+="</table>";
     document.getElementById("car-table").innerHTML = html;
@@ -65,7 +64,6 @@ const searchCar = () => {
 
 const resetTable = () => {
     listCars = [];
-    
 }
 
 form.addEventListener('submit', addCar);

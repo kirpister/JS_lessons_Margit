@@ -1,6 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    overscroll-behavior: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Rubik:wght@300&display=swap');
@@ -13,7 +15,7 @@ li {
     display: inline;
     float: right;
     padding-left: 50px;
-    margin: 10px 70px 0 0;
+    margin: 20px 40px 0 0;
     font-family: 'Rubik', sans-serif;
     font-size: 1.2rem;
     color: #1363DF;
@@ -28,7 +30,6 @@ h2 {
 h3 {
     padding: 15px;
     font-weight: normal;
-    
 }
 
 button {
@@ -50,21 +51,14 @@ label {
     padding-left: 7px;
 }
 
-
-<<<<<<< HEAD
- svg {
-=======
 svg {
->>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
+
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
+
 
 /* NAVIGATION */
 
@@ -74,27 +68,22 @@ svg {
     margin-left: 30px;
     height: 50px;
     width: auto;
-
 }
 
 .container {
-<<<<<<< HEAD
     display: flex;
-=======
-   
->>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
     top: 15px;
     width: 100%;
     display: inline-block;
 }
 
-
 .title {
     float: left;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     font-family: 'Kanit', sans-serif;
     font-size: 2.0rem;
     font-weight: bold;
+    margin-left: 3rem;
 }
 
 .navbar a {
@@ -115,7 +104,6 @@ svg {
     width: 100%;
     display: flex;
 }
-
 
 .content {
     display: inline-block;
@@ -145,14 +133,8 @@ svg {
     margin-top: 200px;
     height: 70px;
     width: 330px;
-<<<<<<< HEAD
     color: #1363DF;
 } 
-=======
-    color:#1363DF;
- } 
->>>>>>> c9656ee0e0f4f3d04dfc74bec0e7dd260bf16a6e
-
 
 
 
