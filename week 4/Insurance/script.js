@@ -40,16 +40,12 @@ const getQuote = (event) => {
         coef = 2.1;
     }
 
-    
-
 customerHealth.forEach((item) => {
     if (item.checked) {
         healthResult.push(item.value);
         coef = coef + 0.01;
     }
 });
-
-
 
 customerHabits.forEach((item) => {
     if (item.checked) {
@@ -61,12 +57,11 @@ customerHabits.forEach((item) => {
         else {
             coef = coef + 0.05;
         }
-
     }
 });
 
- console.log(habitsResult);
- console.log(coef);
+//  console.log(habitsResult);
+//  console.log(coef);
 
 quote = 500 + coef * 500;
 

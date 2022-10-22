@@ -21,7 +21,7 @@ const order = () => {
     let textToWrite ='';
     let numOfToppings = 0;
 
-    for (let i in topping){
+    for (let i in topping) {
         if (topping[i].checked) {
             textToWrite = textToWrite + ", " + topping[i].value;
             numOfToppings++;

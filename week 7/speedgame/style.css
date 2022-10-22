@@ -137,7 +137,7 @@ button {
 .credit-p {
     position: absolute;
     bottom: 20px;
-    left: 46%;
+    left: 45%;
     color: var(--orange);
     letter-spacing: 2px;
     font-size: 0.5rem;
